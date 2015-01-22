@@ -1,0 +1,35 @@
+{
+  "name": "metalsmith-widow",
+  "version": "0.0.0",
+  "description": "Add non breaking spaces to the ends of block level elements, with Metalsmith.",
+  "license": "MIT",
+  "homepage": "https://github.com/ben-eb/metalsmith-widow",
+  "author": {
+    "name": "Ben Briggs",
+    "email": "therealbenbriggs@hotmail.com",
+    "url": "http://beneb.info"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "widow": "^1.0.0"
+  },
+  "devDependencies": {
+    "assert-dir-equal": "^1.0.1",
+    "metalsmith": "^1.0.1",
+    "metalsmith-markdown": "^0.2.1",
+    "mocha": "^2.1.0"
+  },
+  "keywords": [
+    "metalsmith",
+    "typography",
+    "widow",
+    "widows"
+  ],
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ben-eb/metalsmith-widow.git"
+  }
+}
