@@ -2,7 +2,7 @@
 
 > Add non breaking spaces to the ends of block level elements, with Metalsmith.
 
-*If you have any issues with the *output* of this plugin, please use the [widow tracker](https://github.com/ben-eb/widow/issues).*
+*If you have any issues with the output of this plugin, please use the [widow tracker](https://github.com/ben-eb/widow/issues).*
 
 Install via [npm](https://npmjs.org/package/metalsmith-widow):
 
