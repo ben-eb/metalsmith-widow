@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "dependencies": {
-    "widow": "^1.0.0"
+    "widow": "^1.1.0"
   },
   "devDependencies": {
     "assert-dir-equal": "^1.0.1",

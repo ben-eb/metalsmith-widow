@@ -9,7 +9,8 @@ function plugin (options) {
             if (extname(file) !== '.html') {
                 return;
             }
-            files[file].contents = new Buffer(widow(files[file].contents, options));
+            var contents = widow(files[file].contents, options);
+            files[file].contents = new Buffer(contents);
         });
         done();
     }
