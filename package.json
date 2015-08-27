@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-widow",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Add non breaking spaces to the ends of block level elements, with Metalsmith.",
   "license": "MIT",
   "homepage": "https://github.com/ben-eb/metalsmith-widow",
