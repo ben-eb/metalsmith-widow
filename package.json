@@ -6,9 +6,13 @@
   "homepage": "https://github.com/ben-eb/metalsmith-widow",
   "author": {
     "name": "Ben Briggs",
-    "email": "therealbenbriggs@hotmail.com",
+    "email": "beneb.info@gmail.com",
     "url": "http://beneb.info"
   },
+  "files": [
+    "LICENSE-MIT",
+    "index.js"
+  ],
   "main": "index.js",
   "dependencies": {
     "widow": "^1.1.0"
@@ -17,7 +21,8 @@
     "assert-dir-equal": "^1.0.1",
     "metalsmith": "^1.0.1",
     "metalsmith-markdown": "^0.2.1",
-    "mocha": "^2.1.0"
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.0"
   },
   "keywords": [
     "metalsmith",
@@ -26,10 +31,7 @@
     "widows"
   ],
   "scripts": {
-    "test": "mocha test.js"
+    "test": "tape test.js | tap-spec"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/ben-eb/metalsmith-widow.git"
-  }
+  "repository": "ben-eb/metalsmith-widow"
 }

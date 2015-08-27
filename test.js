@@ -1,21 +1,23 @@
 'use strict';
 
-var equal      = require('assert-dir-equal'),
+var test       = require('tape'),
+    equal      = require('assert-dir-equal'),
     widow      = require('./'),
     markdown   = require('metalsmith-markdown'),
     Metalsmith = require('metalsmith');
 
-describe(require('./package.json').name, function () {
-    it('should convert html files', function (done) {
-        Metalsmith('fixtures')
-            .use(markdown())
-            .use(widow())
-            .build(function (err) {
-                if (err) {
-                    return done(err);
-                }
+test('should convert html files', function (t) {
+    t.plan(1);
+
+    Metalsmith('fixtures')
+        .use(markdown())
+        .use(widow())
+        .build(function (err) {
+            if (err) {
+                t.fail();
+            }
+            t.doesNotThrow(function () {
                 equal('fixtures/build', 'fixtures/expected');
-                done();
             });
-    });
+        });
 });
